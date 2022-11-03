@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style1.css" />
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section1{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.border{
+    /* background-color: blue; */
+ 
+    width: 90%;
+    display: flex ;
+    flex-direction: column;
+    
+}
+.parent1{
+    /* background-color: aqua; */
+    height  : 40px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+
+
+}
+ul{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+
+    
+      
+    }
+    li{
+        padding: 5px 6px;
+    }
+    li:hover{ 
+         background-color:yellow;
+         color: white;
+         /* padding: 5px 6px; */
+         border-radius: 30px;
+
+        
+    }
+    .child1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+        width: 30%;
+    }
+    .parent2{
+        /* background-color: brown; */
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .sain{
+        height: calc(100vh - 40px);
+        
+        
+    }
+.sain img{
+    height: 100%;
+    width: 100%;
+    object-fit:contain;
+}
+/* .section2{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+}
+.border2{ 
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.child2{
+    
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.card1{
+    background-color: white;
+    width: 30%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    border-radius: 30px;
+    padding: 0 10px;
+
+}
+.child3{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.option{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    display: none;
+    
+}
+.card1:hover{
+    height: 200px;
+} */
+
+.section3{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+}
+.border3{
+    height: 90vh;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 30px 0;
+ 
+}
+.child3{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.sib3{
+    /* background-color: blue; */
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 50px; */
+    justify-content: space-between;
+    align-items: center;
+
+}
+.sib31{
+    /* background-color:yellow; */
+    height: 200px;
+
+}
+.sib32{
+    /* background-color: magenta; */
+    height: 200px;
+}
+.card1{
+    background-color: white;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    border-radius: 30px;
+    
+
+
+}
+.option{
+    
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    display: none;
+    
+    
+}
+
+.card1:hover{
+    height: 200px;   
+}
+.card1:hover .option{
+    display: block;
+}
+.section4{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+
+}
+.border4{
+    
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.child4{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sib1{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+
+}
+.sib{
+    width: 15%;
+    display: flex;
+    text-align: center;
+}
+.child5{
+    width: 100%;
+     background-color: solid black;
+}
+.child6{
+    
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ul{
+    height: 50px;
+    width: 30%;
+    /* background-color: dimgrey; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+li1{
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+    </style>
+  </head>
+  <body>
+
+    <div class="section1">
+      <div class="border">
+        <div class="parent1">
+          <ul>
+            <li>About</li>
+            <li>Images</li>
+            <li>Contact</li>
+            <li>Email</li>
+            <li>Phone</li>
+          </ul>
+        </div>
+        <div class="parent2">
+          <div class="child1">
+            <h1>welcome to shoping</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
+              praesentium cupiditate atque, beatae nobis distinctio quis quae
+              dolorum non ratione nemo iste unde est, natus laboriosam quaerat
+              saepe suscipit neque?
+            </p>
+          </div>
+          <div class="sain"><img src="./shopGirl.jpg" alt="" /></div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="section2">
+      <div class="border2">
+        <div class="child2">
+          <div class="card1">
+            <h1>product1</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+              quos nesciunt perferendis. Hic iusto pariatur modi laborum optio
+              ipsam rerum, consectetur quod possimus provident qui neque?
+              Dolorem odit at nesciunt?
+            </p>
+            <div class="option">
+              <button>Add To cart</button>
+              <button>Buy now</button>
+            </div>
+          </div>
+          <div class="card1">
+            <h1>product2</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              dolorum reiciendis nam deserunt nobis, itaque dolorem molestiae
+              adipisci laborum perspiciatis nihil autem error molestias labore
+              voluptates temporibus doloremque alias consequuntur?
+            </p>
+            <div class="option">
+              <button>Add To cart</button>
+              <button>Buy now</button>
+            </div>
+          </div>
+          <div class="card1">
+            <h1>product3</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+              praesentium labore, quae quis hic, ullam doloremque, repellendus
+              ad id rem laudantium eos quam. Ipsum reprehenderit eveniet id,
+              commodi labore similique!
+            </p>
+            <div class="option">
+              <button>Add To cart</button>
+              <button>Buy now</button>
+            </div>
+          </div>
+        </div>
+        <div class="child3">
+          <div class="card1">
+            <h1>product4</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi,
+              obcaecati ratione. Vero delectus aspernatur asperiores excepturi
+              assumenda dolore quibusdam fuga, ea soluta. Odit minus facilis id
+              excepturi mollitia quasi architecto.
+            </p>
+            <div class="option">
+              <button>Add To cart</button>
+              <button>Buy now</button>
+            </div>
+          </div>
+          <div class="card1">
+            <h1>product5</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              rerum corrupti illo perspiciatis odit voluptatibus quod id ipsa
+              maiores provident! Suscipit doloremque odio impedit recusandae!
+              Aliquam modi quaerat consectetur fugit?
+            </p>
+            <div class="option">
+              <button>Add To cart</button>
+              <button>Buy now</button>
+            </div>
+          </div>
+          <div class="card1">
+            <h1>product6</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis autem, mollitia at illo hic provident similique,
+              ratione officiis sapiente doloribus enim sequi odit necessitatibus
+              maiores, magnam porro pariatur incidunt consequatur!
+            </p>
+            <div class="option">
+              <button>Add To cart</button>
+              <button>Buy now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="section3">
+      <div class="border3">
+        <div class="child3">
+          <div class="sib3">
+            <div class="sib31">
+              <div class="card1">
+                <h1>product1</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                  quos nesciunt perferendis. Hic iusto pariatur modi laborum
+                  optio ipsam rerum, consectetur quod possimus provident qui
+                  neque? Dolorem odit at nesciunt?
+                </p>
+                <div class="option">
+                  <button>Add To cart</button>
+                  <button>Buy now</button>
+                </div>
+              </div>
+            </div>
+            <div class="sib32">
+              <div class="card1">
+                <h1>product2</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                  quos nesciunt perferendis. Hic iusto pariatur modi laborum
+                  optio ipsam rerum, consectetur quod possimus provident qui
+                  neque? Dolorem odit at nesciunt?
+                </p>
+                <div class="option">
+                  <button>Add To cart</button>
+                  <button>Buy now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="child3">
+          <div class="sib3">
+            <div class="sib31">
+              <div class="card1">
+                <h1>product3</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                  quos nesciunt perferendis. Hic iusto pariatur modi laborum
+                  optio ipsam rerum, consectetur quod possimus provident qui
+                  neque? Dolorem odit at nesciunt?
+                </p>
+                <div class="option">
+                  <button>Add To cart</button>
+                  <button>Buy now</button>
+                </div>
+              </div>
+            </div>
+            <div class="sib32">
+              <div class="card1">
+                <h1>product4</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                  quos nesciunt perferendis. Hic iusto pariatur modi laborum
+                  optio ipsam rerum, consectetur quod possimus provident qui
+                  neque? Dolorem odit at nesciunt?
+                </p>
+                <div class="option">
+                  <button>Add To cart</button>
+                  <button>Buy now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="child3">
+          <div class="sib3">
+            <div class="sib31">
+              <div class="card1">
+                <h1>product5</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                  quos nesciunt perferendis. Hic iusto pariatur modi laborum
+                  optio ipsam rerum, consectetur quod possimus provident qui
+                  neque? Dolorem odit at nesciunt?
+                </p>
+                <div class="option">
+                  <button>Add To cart</button>
+                  <button>Buy now</button>
+                </div>
+              </div>
+            </div>
+            <div class="sib32">
+              <div class="card1">
+                <h1>product6</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                  quos nesciunt perferendis. Hic iusto pariatur modi laborum
+                  optio ipsam rerum, consectetur quod possimus provident qui
+                  neque? Dolorem odit at nesciunt?
+                </p>
+                <div class="option">
+                  <button>Add To cart</button>
+                  <button>Buy now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section4">
+      <div class="border4">
+        <div class="child4">
+          <div class="sib1">
+            <h1>Logo</h1>
+            <h4>company slogan</h4>
+          </div>
+          <div class="sib">Esse autem in incidunt similique corrupti co</div>
+          <div class="sib">
+            adipisicing elit. Maxime eligendi dignissimos recusandae nobis
+          </div>
+          <div class="sib">
+            um dolor sit amet consectetur adipisicing elit. Atque impedi
+          </div>
+          <div class="sib">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
+            ipsum haru
+          </div>
+        </div>
+        <div class="child5"><hr /></div>
+        <div class="child6">
+          <ul>
+            <li1></li1>
+            <li1></li1>
+            <li1></li1>
+            <li1></li1>
+          </ul>
+          <h2>recieved by ebinjoe</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
